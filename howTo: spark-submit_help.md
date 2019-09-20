@@ -1,9 +1,11 @@
-spark-submit --help
+#### For Help
 
-#########################################################
- Run a Scala/Java application on a Spark cluster
-#########################################################
-# Run on a YARN cluster
+`spark-submit --help`
+
+### Run a Scala/Java application on a Spark cluster
+
+####  Run on a YARN cluster
+
 export HADOOP_CONF_DIR=XXX
 
 spark-submit \
@@ -16,20 +18,17 @@ spark-submit \
 
 
 
-#########################################################
- Run a Python application on a Spark cluster
-#########################################################
+#### Run a Python application on a Spark cluster
+
 spark-submit \
       --master yarn \
       --deploy-mode cluster \
       --supervise \
-  <path_to_py_file/py-file-name.py> \
-  <params-or-args>
+      <path_to_py_file/py-file-name.py> \
+      <params-or-args>
 
 
-#########################################################
- Important OPTIONAL PARAMETERS
-#########################################################
+#### Important OPTIONAL PARAMETERS
 
     --queue <QUEUE_NAME>
     --executor-memory 20G

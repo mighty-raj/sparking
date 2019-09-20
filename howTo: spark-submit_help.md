@@ -1,6 +1,3 @@
-#### For Help
-
-`spark-submit --help`
 
 ### Run a Scala/Java application on a Spark cluster
 
@@ -47,6 +44,9 @@ spark-submit \
                                 classpath.
                                 
 
+#### For any Help
+
+`spark-submit --help`
 
 How to configure executors, exec mem etc: 
 https://spoddutur.github.io/spark-notes/distribution_of_executors_cores_and_memory_for_spark_application.html

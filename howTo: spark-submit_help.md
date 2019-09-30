@@ -10,6 +10,7 @@ spark-submit \
     --master yarn \
     --deploy-mode cluster \
     --supervise \
+    --queue <queue-name> \
     <path_to_jar_file/jar-file-name.jar>  \
     <params-or-args>
 
